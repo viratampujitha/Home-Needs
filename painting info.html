@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpenter</title>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-heading-container">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.7GgwBJGxZ67HXEWg5Gqm9AHaHa&pid=Api&P=0&h=30" alt="Logo" class="logo">
+        <h1 class="heading">carpenter</h1>
+    </div>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="groceries.html">Groceries</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Header section ends -->
+
+<!-- Spacer to create gap between header and main content -->
+<div class="header-space"></div>
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="searchBox" placeholder="Search...">
+        <button onclick="searchContent()"><strong>Search</strong></button>
+        <div id="message">Not available. Enter the nearby City</div>
+    </div>
+    <div id="results" class="results-container"></div>
+    <div class="content">
+        <div class="searchable">
+          <h2>Satya Veerabhadra Enterprises</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near East godavari,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Sunkara Palem, Yanam, East Godavari - 533464</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947133703 </p>
+      </div>
+        <div class="searchable">
+          <h2>Uday Painting And Design Works</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near East godavari,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Peddapuram, East Godavari - 533437</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> ..... </p>
+      </div>
+
+        <div class="searchable">
+          <h2>Krishna Sai Paint Stores</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Rajahmundry,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Apparao Road, Av Appa Rao Road, Rajahmundry - 533103 (Near Kodanda Ramalayam)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947117206 </p>
+      </div>
+
+       <div class="searchable">
+          <h2>NRI Enterprises Modular Kitchen Gallery</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Rajahmundry,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Near Brotheren Church, Koru Konda Road, Rajahmundry - 533105</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947412285 </p>
+      </div>
+
+       <div class="searchable">
+          <h2>Danalakshmi Painting Service</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Rajahmundry,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Av Apparao Road, Rajahmundry, Rajahmundry - 533103</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7942688375 </p>
+      </div>
+
+       <div class="searchable">
+          <h2>Abhinav Painting Works</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near rajahmundry,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Rajahmundry - 533101 (Near Vl Puram, Gandhipuram,</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7942684768 </p>
+      </div>
+
+ <div class="searchable">
+          <h2>Shah Works</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near kakinada,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Suresh Nagar, Suresh Nagar, Kakinada - 533003</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> ...... </p>
+      </div>
+
+     <div class="searchable">
+          <h2>Jss Water Proofing</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near rajahmundry,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Shanthi Nagar Road, Kateru, Rajahmundry - 533105 (Bharath Nagar)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947139741 </p>
+      </div>
+
+      <div class="searchable">
+          <h2>A S Water Proofing Painting and False Ceiling Works</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near kakinda,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Dairyform Center, Kakinada - 533001 (Near Kalpana Center)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7383521448 </p>
+      </div>
+
+       <div class="searchable">
+          <h2>Lakshmi Srinivasa Paints</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near rajamundry,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>GNT ROAD, Rajahmundry - 533103 (Besides Old Naga Devi Theater,)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 8128505518 </p>
+      </div>
+
+       <div class="searchable">
+          <h2>Naagu Paintings</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near kakinada,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Buddavarapu Vari Street, Main Road, Kakinada - 533001 (Behind Big Mosque)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947118833 </p>
+      </div>
+
+ <div class="searchable">
+          <h2>Itz My Choice</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near kakinada,who can avail painting services. Just give them a call.</p>
+          <p><strong>Address:</strong>Ayodyanagar, Kakinada - 533001</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947423182 </p>
+      </div>
+
+
+      </div>
+</div>
+       <script>
+    function searchContent() {
+        var input = document.getElementById("searchBox").value.toLowerCase();
+        var content = document.getElementsByClassName("searchable");
+        var message = document.getElementById("message");
+        var resultsContainer = document.getElementById("results");
+        var found = false;
+        var matchedResults = [];
+
+        // Hide all original content initially
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
+
+        // Clear previous results
+        resultsContainer.innerHTML = "";
+
+        for (var i = 0; i < content.length; i++) {
+            var item = content[i];
+            var text = item.textContent.toLowerCase();
+
+            if (text.includes(input)) {
+                found = true;
+                matchedResults.push(item.innerHTML);
+            }
+        }
+
+        if (found) {
+            message.style.display = "none";
+            matchedResults.forEach(result => {
+                var resultItem = document.createElement("div");
+                resultItem.className = "search-result";
+                resultItem.innerHTML = result;
+                resultsContainer.appendChild(resultItem);
+            });
+        } else {
+            message.style.display = "block";
+        }
+    }
+</script>
+      </main>
+    <footer>
+        <p>&copy; 2024 Home Needs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+

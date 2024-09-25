@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden maintenance Info</title>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-heading-container">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.7GgwBJGxZ67HXEWg5Gqm9AHaHa&pid=Api&P=0&h=220" alt="Logo" class="logo">
+        <h1 class="heading">Garden Maintenances</h1>
+    </div>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="groceries.html">Groceries</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Header section ends -->
+
+<!-- Spacer to create gap between header and main content -->
+<div class="header-space"></div>
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="searchBox" placeholder="Search...">
+        <button onclick="searchContent()"><strong>Search</strong></button>
+        <div id="message">Not available. Enter the nearby City</div>
+    </div>
+    <div id="results" class="results-container"></div>
+    <div class="content">
+        <div class="searchable">
+            <h2>Dharmika Satya Sri Gardening</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near kakinada, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong> Bhanugudi Junction, Kakinada - 533003 (SARPAVARAM JUNCTION MAIN ROAD)</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7207203422</p>
+        </div>
+        <div class="searchable">
+            <h2>Sri Satya Kiran Nursery and Land Scaping</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near kakinada, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong> Bhanugudi, Main Road, Kondayyapalem, Kakinada - 533003 (Near Subhadra Arcade)</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947413013</p>
+        </div>
+        <div class="searchable">
+            <h2>Sai Maha Lakshmi Gardens</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near kadiyam, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong> Kadiyam High School Road, Kadiyam, East Godavari - 533126 (Opposite Bharth Petrol Pump)</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 8128504569</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Green INDIA Nursery</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near Rajahmundry, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong> Green India, Veeravarm to Dulla Road, Kadiyapulanka, East Godavari</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 8128236885</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Ashoka Nursery</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near Rajahmundry, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong> Siddireddy Complex Street, Kadiyapulanka</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947421533</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Dharmika Satya Sri Gardening</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near samarlakota, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong> Main Road, Samarlakota, East godavari </p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7207203422</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Vanadurga Gardening</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near samarlakota, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong>Samarlakota Road, Peddapuram, East Godavari - 533437 (Near Bridge)</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947423233</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Vinayaka Garden Works</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near samarlakota , who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong>Samarlakota Road, Peddapuram, East Godavari - 533437 (Near Bridge)</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947423233</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Svkd Rythu Nursery</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near Rajahmundry, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong>Kadiyam Road, Rajahmundry - 533101 (Near By Dunnapotula Road)</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947423233</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Lakshmi Harinarayana Nursery</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near Rajahmundry, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong>Prakasam Nagar, Rajahmundry</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947422355</p>
+        </div>
+
+        <div class="searchable">
+            <h2>J L Gardens</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near Akikidu, who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong>Akividu, West Godavari</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947423419</p>
+        </div>
+
+        <div class="searchable">
+            <h2>Oxygen Landscaping And Horticulture</h2>
+            <p>__________________________________________________________</p>
+            <p>A shop near eluru , who can avail gardening services. Just give them a call.</p>
+            <p><strong>Address:</strong>Tangellamudi, Eluru</p>
+            <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7942695109</p>
+        </div>
+
+    </div>
+</div>
+<script>
+    function searchContent() {
+        var input = document.getElementById("searchBox").value.toLowerCase();
+        var content = document.getElementsByClassName("searchable");
+        var message = document.getElementById("message");
+        var resultsContainer = document.getElementById("results");
+        var found = false;
+        var matchedResults = [];
+
+        // Hide all original content initially
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
+
+        // Clear previous results
+        resultsContainer.innerHTML = "";
+
+        for (var i = 0; i < content.length; i++) {
+            var item = content[i];
+            var text = item.textContent.toLowerCase();
+
+            if (text.includes(input)) {
+                found = true;
+                matchedResults.push(item.innerHTML);
+            }
+        }
+
+        if (found) {
+            message.style.display = "none";
+            matchedResults.forEach(result => {
+                var resultItem = document.createElement("div");
+                resultItem.className = "search-result";
+                resultItem.innerHTML = result;
+                resultsContainer.appendChild(resultItem);
+            });
+        } else {
+            message.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
