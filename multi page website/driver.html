@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber</title>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-heading-container">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.7GgwBJGxZ67HXEWg5Gqm9AHaHa&pid=Api&P=0&h=220" alt="Logo" class="logo">
+        <h1 class="heading">Driver</h1>
+    </div>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="groceries.html">Groceries</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Header section ends -->
+
+<!-- Spacer to create gap between header and main content -->
+<div class="header-space"></div>
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="searchBox" placeholder="Search...">
+        <button onclick="searchContent()"><strong>Search</strong></button>
+        <div id="message">Not available. Enter the nearby City</div>
+    </div>
+    <div id="results" class="results-container"></div>
+    <div class="content">
+        <div class="searchable">
+          <h2>JK Car Travels & Opting Drivers</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Av road in rajumahendry, who can avail a driver. Just give them a call.</p>
+          <p><strong>Address:</strong>AVA Road, AV Appa Rao Road, Rajahmundry - 533103 (Near Pantaloons)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> 07947111368 </p>
+      </div>
+       <div class="searchable">
+
+          <h2>Manasa Car Driver Service</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near prakash nagar, who can avail driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Shop No 5, Prakasam Nagar, Rajahmundry - 533103 (Near Gandhi Nagar & Prakasam Nagar Park)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947435957 </p>
+      </div>
+       <div class="searchable">
+
+          <h2>Raju car Driver services</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near kakinada ,who can avail driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Nftl road sarpavaram ,kakinada)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +9107383284004 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Giri Car Rental</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Mandapeta ,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Mandapeta, East Godavari - 533308 (Near Main Road) - 533101</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947411948 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Sri PEDDINTLAMMA Taxi Drivers & Owners & Workers Union</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Razole, who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong> 1-257, Canal Road, Razole, East Godavari - 533242 (Near Old Bus Stand) - 533104</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947415374 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Car Driver</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near rajahmundry, who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Raja Street, Alcot Gardens, Rajahmundry - 533101</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 8128256235 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Nagaraju A</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Tanuku ,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>House No 22-12-25, Main Road, Tanuku HO, Tanuku - 534211 (Near Venkateshwara Theater, Behind Consumer Court Society)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947120269 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Opting Driver</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Elluru,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Shop No 6, Western Street, Eluru Bazaar, Eluru - 534001 (Near Dongala Mandapam)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 79471233848 </p>
+      </div>
+     <div class="searchable">
+
+          <h2>Car Driver</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near kovvur,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Flat No 369, Kovvur, West Godavari - 534350 (Near NTR Ground)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91  7947127000</p>
+      </div>
+      <div class="searchable">
+
+          <h2>ANJU DRIVING SERVICES & TRAVELS</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Maddilapalem,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Door Number : M1, Prabha Enclave, Maddilapalem, Salagramapuram, Visakhapatnam - 530024 (Andhra University)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i>+91 07487888767</p>
+      </div>
+      <div class="searchable">
+
+          <h2>Driver Mamu</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop nearVarhagiri Nagar,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Door No 1-30, 1st Floor, Varhagiri Nagar, Yendada, Visakhapatnam - 530045 (Yendada Village</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 07411946578 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Chaitu Travels and Tours</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near  Sri Krishna Davaraya Nagar,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</stroarang>D NO 27-4-77/1/a, Sri Krishna Davaraya Nagar, Jug Jct, Visakhapatnam - 530044</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i>+91 09845462989 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Mr Travels</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near  Sheela Nagar,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong> Door No. 32-10-4/1, Sheela Nagar, Visakhapatnam - 530012 (Near BVK School)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 08401089987
+ </p>
+      </div>
+     <div class="searchable">
+
+          <h2>S R Travels</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Mazeed Shoping Complex,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Door No 1-102-20, Shop No 7, Mazeed Shoping Complex, Mvp Colony, Visakhapatnam - 530017 (Behind TTD Kalyana Mandapam)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7942687173 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Sharma Car Driver and Taxi Service</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near  Vikash Nagar Colony,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Gali No. -3, Vikash Nagar Colony, Beawar Road, Adarsh Nagar, Ajmer - 305001 (Near Railway Crossing)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 07405071882 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Sai Cherishma Driving Services</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near  Marripalem ,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>D No 58-1-89/2, Marripalem, Visakhapatnam - 530018 (Near Kamala Nursing Home) </p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947113241 </p>
+      </div>
+     <div class="searchable">
+
+          <h2>Ayyappa Driver Services</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near MVP Main Road, Mvp Colony ,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Ayappa Driver Services, MVP Main Road, Mvp Colony, Visakhapatnam - 530017 (Ushodaya Junction)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7947421911 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Shree Ganesh Tours</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near  Kakinada,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Indrapalam, Indrapalem, Kakinada - 533006 (Near Indian Petrol Pump, 1st Right)7</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 79471464470 </p>
+      </div>
+      <div class="searchable">
+
+          <h2>Madhu Driving & Travels Services</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Rajahmundry,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Door No :48, Gandhipuram, Rajahmundry - 533103 (Klm Fashion Mall)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7942700192 </p>
+      </div>
+<div class="searchable">
+
+          <h2>Sri Vigneswara Travels</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near  Lalitha Nagar,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>H.no-, Lalitha Nagar, Rajahmundry - 533105 (Health Hospital)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 7942698714</p>
+      </div>
+<div class="searchable">
+
+          <h2>Mourya Sai Travels</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near  Devi Chowk,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>H No-12-104, Near Anand Regency, Devi Chowk, Rajahmundry - 533103 (Main Road)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> +91 08128553898 </p>
+      </div>
+<div class="searchable">
+
+          <h2>car opting service</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Lalacheruvua,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Venkat, Lalacheruvu, Stadium Road, Rajahmundry - 533101 (Signal Point</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i> 7947421262 </p>
+      </div>
+<div class="searchable">
+
+          <h2>Mounika Car Travels And Drivers Services</h2>
+          <p>__________________________________________________________</p>
+          <p>A shop near Rajahmundry,who can avail Driver. Just give them a call.</p>
+          <p><strong>Address:</strong>Railway Station Road, Alcot Gardens, Rajahmundry - 533101 (Near By Rajahmundry)</p>
+          <p><i class="fas fa-phone-alt" style="color:#3cb371;"></i>+91 08460303021 </p>
+      </div>
+</div>
+</div>
+      <script>
+    function searchContent() {
+        var input = document.getElementById("searchBox").value.toLowerCase();
+        var content = document.getElementsByClassName("searchable");
+        var message = document.getElementById("message");
+        var resultsContainer = document.getElementById("results");
+        var found = false;
+        var matchedResults = [];
+
+        // Hide all original content initially
+        for (var i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
+        }
+
+        // Clear previous results
+        resultsContainer.innerHTML = "";
+
+        for (var i = 0; i < content.length; i++) {
+            var item = content[i];
+            var text = item.textContent.toLowerCase();
+
+            if (text.includes(input)) {
+                found = true;
+                matchedResults.push(item.innerHTML);
+            }
+        }
+
+        if (found) {
+            message.style.display = "none";
+            matchedResults.forEach(result => {
+                var resultItem = document.createElement("div");
+                resultItem.className = "search-result";
+                resultItem.innerHTML = result;
+                resultsContainer.appendChild(resultItem);
+            });
+        } else {
+            message.style.display = "block";
+        }
+    }
+</script>
+      </main>
+    <footer>
+        <p>&copy; 2024 Home Needs. All rights reserved.</p>
+    </footer>
+</body>
+</html>

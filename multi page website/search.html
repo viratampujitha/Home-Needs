@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 90%;
+        }
+
+        .search-container {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #searchBox {
+            padding: 10px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        #message {
+            margin-top: 10px;
+            color: red;
+            display: none;
+        }
+
+        .content {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+        }
+
+        .searchable {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search...">
+            <button onclick="searchContent()">Search</button>
+            <div id="message">Not available</div>
+        </div>
+
+        <div class="content">
+            <div class="searchable" id="area1">
+                <h2>Area 1</h2>
+                <p>This is some text in area 1. You can search this content.</p>
+            </div>
+            <div class="searchable" id="area2">
+                <h2>Area 2</h2>
+                <p>This is some text in area 2. Try searching this content too.</p>
+            </div>
+            <div class="searchable" id="area3">
+                <h2>Area 3</h2>
+                <p>Area 3 has different content. Make sure your search covers this as well.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchContent() {
+            // Get the search query
+            const query = document.getElementById('searchBox').value.toLowerCase();
+            
+            // Get all searchable areas
+            const areas = document.querySelectorAll('.searchable');
+            
+            let found = false;
+            
+            // Loop through each area and search for the query
+            areas.forEach(area => {
+                // Remove previous highlights
+                area.innerHTML = area.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+                
+                // If the query is not empty
+                if (query) {
+                    // Get the text content of the area
+                    const content = area.innerHTML;
+                    
+                    // Create a regular expression to find the query in the content
+                    const regex = new RegExp(query, 'gi');
+                    
+                    // Replace the query in the content with highlighted text
+                    const highlightedContent = content.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+                    
+                    // Update the area with the highlighted content
+                    area.innerHTML = highlightedContent;
+                    
+                    // Check if any match was found
+                    if (regex.test(content)) {
+                        found = true;
+                    }
+                }
+            });
+            
+            // Display 'Not available' message if no matches are found
+            const message = document.getElementById('message');
+            if (query && !found) {
+                message.style.display = 'block';
+            } else {
+                message.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
